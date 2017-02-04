@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="TextBookApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TextBook</title>
+
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<script src="assets/libs/angular.min.js"></script>
+	<script src="app/app.js"></script>
+</head>
+<body>
+	<div ng-controller="testCTRL">
+		<div class="col-sm-4">
+			<h3>{{foo}}</h3>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" ng-model="foo" ng-mouseenter="inc = inc+1" />
+			<button class="btn btn-default">{{inc}}</button>
+		</div>
+		<div class="col-sm-4">
+			<ul>
+				<li>1 point</li>
+				<li>2 point</li>
+				<li>3 point</li>
+			</ul>
+		</div>
+	</div>
+	<script src="assets/libs/jquery-3.1.1.min.js"></script>
+	<script src="assets/libs/bootstrap.js"></script>
+</body>
+</html>

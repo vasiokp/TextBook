@@ -1,8 +1,10 @@
-﻿'use strict';
+﻿(function () {
+	'use strict';
 
-var app = angular.module('TextBookApp',[]);
+	var app = angular.module('TextBookApp', ['ngMaterial']);
 
-app.controller('testCTRL', function ($scope) {
-	$scope.foo = 'Hello mama';
-	$scope.inc = 0;
+	app.controller('testCTRL', function ($scope) {
+		$scope.foo = 'Hello mama';
+		$scope.inc = 0;
+	});
 });

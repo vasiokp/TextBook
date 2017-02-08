@@ -5,28 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TextBook</title>
-	<script src="assets/libs/angular.min.js"></script>
-
 	<link href="assets/css/bootstrap.css" rel="stylesheet" />
-
+	<link href="assets/libs/angular-material.min.css" rel="stylesheet" />
 
 </head>
 <body>
-	<div>
-		<div class="col-sm-4">
-			<h3>{{foo}}</h3>
-		</div>
-		<div class="col-sm-4">
-			<input type="text" class="form-control" ng-model="foo" ng-mouseenter="inc = inc+1" />
-			<button class="btn btn-default">{{inc}}</button>
-		</div>
-		<div class="col-sm-4">
+	
+	<section>
 		<left-menu></left-menu>
-		</div>
-	</div>
 
-	<script src="app/components/leftMenu/leftMenu.directive.js"></script>
+
+
+	</section>
+
+
+
+	<script src="assets/libs/angular.min.js"></script>
+	<script src="assets/libs/angular-animate.min.js"></script>
+	<script src="assets/libs/angular-aria.min.js"></script>
+	<script src="assets/libs/angular-messages.min.js"></script>
+	<script src="assets/libs/angular-material.min.js"></script>
+
 	<script src="app/app.js"></script>
+
+	<script src="app/components/content/content.directive.js"></script>
+	<script src="app/components/leftMenu/leftMenu.directive.js"></script>
 	<script src="assets/libs/jquery-3.1.1.min.js"></script>
 	<script src="assets/libs/bootstrap.js"></script>
 </body>

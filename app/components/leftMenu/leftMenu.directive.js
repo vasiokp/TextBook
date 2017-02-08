@@ -17,4 +17,4 @@
 		$scope.inctrl = 'leftmenu';
 	}
 
-})(angular.module('TextBook'));
+})(angular.module('TextBookApp'));

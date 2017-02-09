@@ -13,8 +13,8 @@
 		}
 	}
 
-	function leftMenuCtrl($scope, $rootScope) {
-		$scope.inctrl = 'leftmenu';
+	function leftMenuCtrl($scope, $rootScope,$mdSidenav) {
+
 	}
 
 })(angular.module('TextBookApp'));

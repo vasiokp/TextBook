@@ -5,20 +5,37 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TextBook</title>
-	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/libs/bootstrap.css" rel="stylesheet" />
 	<link href="assets/libs/angular-material.min.css" rel="stylesheet" />
-
+	<link href="assets/css/main.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/theme/white.css">
 </head>
-<body>
-	
-	<section>
-		<left-menu></left-menu>
+<body ng-cloak>
+<div class="fluid-container">
+	<md-toolbar>
+		TextBook
+	</md-toolbar>
+	<div class="row">
+		<div style="background-color:ghostwhite" class="col-md-2">
+			<left-menu></left-menu>
+		</div>
+		<div style="background-color:azure" class="col-md-10">
+			<content-img></content-img>
+		</div>
+
+
+	</div>
 
 
 
-	</section>
 
 
+
+
+
+
+</div>
 
 	<script src="assets/libs/angular.min.js"></script>
 	<script src="assets/libs/angular-animate.min.js"></script>
@@ -27,6 +44,10 @@
 	<script src="assets/libs/angular-material.min.js"></script>
 
 	<script src="app/app.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+            Reveal.initialize();
+	</script>
 
 	<script src="app/components/content/content.directive.js"></script>
 	<script src="app/components/leftMenu/leftMenu.directive.js"></script>
